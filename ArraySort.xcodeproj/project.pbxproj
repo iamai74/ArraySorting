@@ -8,22 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		01B89F1C235218990010A628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B89F1B235218990010A628 /* AppDelegate.swift */; };
-		01B89F1E235218990010A628 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B89F1D235218990010A628 /* SceneDelegate.swift */; };
 		01B89F20235218990010A628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B89F1F235218990010A628 /* ViewController.swift */; };
 		01B89F23235218990010A628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B89F21235218990010A628 /* Main.storyboard */; };
 		01B89F252352189C0010A628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B89F242352189C0010A628 /* Assets.xcassets */; };
 		01B89F282352189C0010A628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B89F262352189C0010A628 /* LaunchScreen.storyboard */; };
+		C2849B478F9F4FB48A8E0BA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C28EBDD6DD8A9CF0FF31EDDD /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01B89F18235218990010A628 /* ArraySort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArraySort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B89F1B235218990010A628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01B89F1D235218990010A628 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01B89F1F235218990010A628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01B89F22235218990010A628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01B89F242352189C0010A628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01B89F272352189C0010A628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B89F292352189C0010A628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B89F2F235234110010A628 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C28EBDD6DD8A9CF0FF31EDDD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +41,10 @@
 		01B89F0F235218990010A628 = {
 			isa = PBXGroup;
 			children = (
+				01B89F2F235234110010A628 /* README.md */,
 				01B89F1A235218990010A628 /* ArraySort */,
 				01B89F19235218990010A628 /* Products */,
+				C28EBDD6DD8A9CF0FF31EDDD /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				01B89F1B235218990010A628 /* AppDelegate.swift */,
-				01B89F1D235218990010A628 /* SceneDelegate.swift */,
 				01B89F1F235218990010A628 /* ViewController.swift */,
 				01B89F21235218990010A628 /* Main.storyboard */,
 				01B89F242352189C0010A628 /* Assets.xcassets */,
@@ -128,6 +130,7 @@
 				01B89F282352189C0010A628 /* LaunchScreen.storyboard in Resources */,
 				01B89F252352189C0010A628 /* Assets.xcassets in Resources */,
 				01B89F23235218990010A628 /* Main.storyboard in Resources */,
+				C2849B478F9F4FB48A8E0BA8 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +143,6 @@
 			files = (
 				01B89F20235218990010A628 /* ViewController.swift in Sources */,
 				01B89F1C235218990010A628 /* AppDelegate.swift in Sources */,
-				01B89F1E235218990010A628 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6A58A43EM;
 				INFOPLIST_FILE = ArraySort/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.iamai.ArraySort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6A58A43EM;
 				INFOPLIST_FILE = ArraySort/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.iamai.ArraySort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
